@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body class=".animatedgradient">
+    <div class="main">
+        <h1>Password Generator</h1>
+        <div >
+            <div id="Password"></div>
+            <div class="inputs">
+                <span>Length : </span>
+                <input type="range" name="" id="slider" min="6" value="10" max="16" onchange="updateSliderValue()">
+                <label for="slider" id="sliderdiv">value</label>
+            </div>
+            <div class="inputs">
+                <input type="checkbox" name="" id="UpperCase"> <label for="UpperCase">Include UpperCase Letters(A-Z)</label>
+            </div>
+            <div class="inputs">
+                <input type="checkbox" name="" id="LowerCase"> <label for="LowerCase">Include LowerCase Letters(a-z)</label>
+            </div>
+            <div class="inputs">
+                <input type="checkbox" name="" id="Numbers"> <label for="Numbers">Include Numbers(0-9)</label>
+            </div>
+            <div class="inputs">
+                <input type="checkbox" name="" id="Symbols"> <label for="Symbols">Include Special Symbols(@,#,$,%,&,...)</label>
+            </div>
+        </div>
+        <div id="Strength">
+
+        </div>
+        <button onclick="generate()">Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
